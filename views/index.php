@@ -6,23 +6,11 @@
     <title>todo-list</title>
 </head>
 <body>
-    <div class="container">
-        <div class="record">
-            <div class="left">
-                Item 1
-            </div>
-            <div class="right">
-                <a href="/">Option 1</a>
-                <a href="/">Option 2</a>
-            </div>
-            <div class="left">
-                Item 1
-            </div>
-            <div class="right">
-                <a href="/">Option 1</a>
-                <a href="/">Option 2</a>
-            </div>
-        </div>
-    </div>
+    <?php
+    foreach($data as $key)
+    {
+        echo '<b>'.$key['name'].' '.$key['date'].' | <a href="/">delete</a> | <a href="/">update</a> | <a href="/">view</a>';
+    }
+    ?>
 </body>
 </html>
